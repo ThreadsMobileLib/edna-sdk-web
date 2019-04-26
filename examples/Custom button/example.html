@@ -1,0 +1,240 @@
+<!doctype html>
+<html lang="">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Threads Chat Widget Demo: Custom button</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <script
+                src="http://code.jquery.com/jquery-2.2.4.min.js"
+                integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44="
+                crossorigin="anonymous"></script>
+
+        <style>
+            * {
+                margin: 0;
+                padding: 0;
+                -moz-box-sizing: border-box;
+                -o-box-sizing: border-box;
+                -webkit-box-sizing: border-box;
+                box-sizing: border-box;
+            }
+
+            body {
+                padding: 10px;
+                font-family: "Open Sans", Arial, sans-serif;
+                font-size: 16px;
+            }
+
+            pre {
+                margin-top: 20px;
+            }
+
+            ul {
+                padding: 0;
+                width: 33%;
+            }
+
+            li {
+                list-style: none;
+                padding: 10px;
+                border: 1px solid silver;
+                margin-bottom: 20px;
+            }
+
+            .btn {
+                width: 200px;
+            }
+
+            @-moz-keyframes rotate {
+                0% {
+                    transform: rotate(0deg);
+                }
+                100% {
+                    transform: rotate(-360deg);
+                }
+            }
+
+            @-webkit-keyframes rotate {
+                0% {
+                    transform: rotate(0deg);
+                }
+                100% {
+                    transform: rotate(-360deg);
+                }
+            }
+
+            @-o-keyframes rotate {
+                0% {
+                    transform: rotate(0deg);
+                }
+                100% {
+                    transform: rotate(-360deg);
+                }
+            }
+
+            @keyframes rotate {
+                0% {
+                    transform: rotate(0deg);
+                }
+                100% {
+                    transform: rotate(-360deg);
+                }
+            }
+
+            .custom-button {
+                position: relative;
+                display: inline-block;
+                width: 100px;
+                height: 100px;
+                left: 25px;
+                top: 15px;
+            }
+
+            .round {
+                display: block;
+                position: absolute;
+                left: 0;
+                top: 0;
+                width: 100%;
+                height: 100%;
+                padding-top: 30px;
+                text-decoration: none;
+                text-align: center;
+                font-size: 25px;
+                text-shadow: 0 1px 0 rgba(255, 255, 255, .7);
+                letter-spacing: -.065em;
+                font-family: "Hammersmith One", sans-serif;
+                -webkit-transition: all .25s ease-in-out;
+                -o-transition: all .25s ease-in-out;
+                -moz-transition: all .25s ease-in-out;
+                transition: all .25s ease-in-out;
+                border-radius: 300px;
+                z-index: 1;
+                border-width: 4px;
+                border-style: solid;
+                font-weight: bold;
+            }
+
+            .round:hover {
+                width: 130%;
+                height: 130%;
+                left: -15%;
+                top: -15%;
+                font-size: 33px;
+                padding-top: 38px;
+                z-index: 2;
+                border-size: 10px;
+                -webkit-transform: rotate(-360deg);
+                -moz-transform: rotate(-360deg);
+                -o-transform: rotate(-360deg);
+                transform: rotate(-360deg);
+            }
+
+            .yellow {
+                background-color: rgba(252, 227, 1, 1);
+                color: rgba(153, 38, 0, 1);
+                border-color: rgba(153, 38, 0, .2);
+            }
+
+            .yellow:hover {
+                color: rgba(252, 227, 1, 1);
+            }
+
+            .round span.round {
+                display: block;
+                opacity: 0;
+                -webkit-transition: all .5s ease-in-out;
+                -moz-transition: all .5s ease-in-out;
+                -o-transition: all .5s ease-in-out;
+                transition: all .5s ease-in-out;
+                font-size: 10px;
+                border: none;
+                padding: 40% 20% 0 20%;
+                color: #fff;
+            }
+
+            .round span:hover {
+                opacity: .85;
+                font-size: 18px;
+                -webkit-text-shadow: 0 1px 1px rgba(0, 0, 0, .5);
+                -moz-text-shadow: 0 1px 1px rgba(0, 0, 0, .5);
+                -o-text-shadow: 0 1px 1px rgba(0, 0, 0, .5);
+                text-shadow: 0 1px 1px rgba(0, 0, 0, .5);
+            }
+
+            .yellow span {
+                background: rgba(161, 145, 0, .7);
+            }
+        </style>
+    </head>
+
+    <body>
+        <div>
+            Методы управления видимостью чата для использования с кастомной кнопкой.
+
+            См. <a
+                href="https://github.com/ThreadsMobileLib/threads-sdk-web#%D0%A1%D1%82%D1%80%D1%83%D0%BA%D1%82%D1%83%D1%80%D0%B0-%D0%BA%D0%BE%D0%BD%D1%84%D0%B8%D0%B3%D1%83%D1%80%D0%B0%D1%86%D0%B8%D0%BE%D0%BD%D0%BD%D0%BE%D0%B3%D0%BE-%D1%84%D0%B0%D0%B9%D0%BB%D0%B0-settingsjson"><code>webchat/isContainerHidden</code></a>
+        </div>
+
+        <ul>
+            <li>
+                <button class="btn" onclick="ThreadsWidget.hideChat()">
+                    Скрыть контейнер чата
+                </button>
+
+                <pre>ThreadsWidget.hideChat()</pre>
+            </li>
+
+            <li>
+                <button class="btn" onclick="ThreadsWidget.showChat()">
+                    Показать контейнер чата
+                </button>
+
+                <pre>ThreadsWidget.showChat()</pre>
+            </li>
+
+            <li>
+                Функция обратного вызова, выполняющаяся при закрытии Чата
+
+                <pre>ThreadsWidget.onHideChat(callback)</pre>
+            </li>
+        </ul>
+
+        <!-- Custom button -->
+        <div id="custom" class="custom-button">
+            <a href="#" class="round yellow">
+                CHAT<span class="round">Click this button to open chat!</span>
+            </a>
+        </div>
+
+        <script>
+            // place client ID / client data here
+        </script>
+
+        <!-- BEGIN THREADS {literal} -->
+        <script type="text/javascript">!function(e){"use strict";var t=window,n=document;function a(e,n){var a=setInterval(function(){t.ThreadsWidget&&!t.ThreadsWidget.isDummy&&(clearInterval(a),t.ThreadsWidget[e]&&t.ThreadsWidget[e](n))},100)}t.ThreadsWidget={isDummy:!0,showChat:function(){a("showChat")},hideChat:function(){a("hideChat")},onHideChat:function(e){a("onHideChat",e)},onScenarios:function(e){a("onScenarios",e)}};var i,s=e,o=(i=new XMLHttpRequest,function(e,t,n,a){i.onreadystatechange=function(){if(4===i.readyState)if(200===this.status)n(i.response);else{if("function"!=typeof a)throw new Error(i.response);a(i)}},i.open(e,t),i.send()});function r(e){e.webchat&&(e.webchat.filename=e.filename),sessionStorage.setItem("__threadsWidget",JSON.stringify(e.webchat));var t=n.createElement("script");t.type="text/javascript",t.async=!0,t.src=e.filename;var a=n.getElementsByTagName("script")[0];a?a.parentNode.insertBefore(t,a):n.body.appendChild(t)}function d(){o("GET",s+"?rnd="+Math.random(),function(e){var t=JSON.parse(e);r(t)})}"complete"===n.readyState?d():t.attachEvent?t.attachEvent("onload",d):t.addEventListener("load",d,!1)}("settings.json");</script>
+        <!-- {/literal} END THREADS -->
+
+        <script>
+            $(function() {
+                $('#custom').click(function() {
+                    $('#custom').fadeOut('fast', function() {
+                        ThreadsWidget.showChat()
+                    })
+                })
+
+                // функция обратного вызова при закрытии чата
+                ThreadsWidget.onHideChat(function() {
+                    $('#custom').fadeIn('fast')
+                })
+
+                // функция обратного вызова при поступлении сценариев
+                ThreadsWidget.onScenarios(function(scenarios) {
+                    console && console.log('Scenarios', scenarios)
+                })
+            })
+        </script>
+    </body>
+</html>
