@@ -1,9 +1,10 @@
 # Threads Web-chat SDK
 
-Файлы, необходимые для интеграции виджета Чата и примеры использования.
+Threads webchat SDK description and examples for clients with Threads Gate
 
-[Документация и руководство разработчика](../../wiki)
+[Documentation and guides](../../wiki)
 
-Контакты:<br>
+Contacts:<br>
 https://threads.im<br>
 customer@threads.im
+
