@@ -1,6 +1,6 @@
-# Threads Webchat SDK for clients with Threads Gate
+# Standard Threads webchat SDK
 
-Threads webchat SDK description and examples for clients with Threads Gate
+Standard Threads webchat SDK description and examples
 
 [Documentation and guides](../../wiki)
 
