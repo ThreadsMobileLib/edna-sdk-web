@@ -1,5 +1,6 @@
 {
-    "filename": "../../threadswidget-3.10.0.min.js",
+    "filename": "../../threadswidget-3.13.0.min.js",
+    "style": "../../threadswidget-3.13.0.min.css",
     "webchat": {
         "locale": "ru",
         "package": "FIX_ME",
