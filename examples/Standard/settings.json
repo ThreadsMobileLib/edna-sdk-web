@@ -1,6 +1,6 @@
 {
-    "filename": "../../threadswidget-3.13.1.min.js",
-    "style": "../../threadswidget-3.13.1.min.css",
+    "filename": "../../threadswidget-3.14.0.min.js",
+    "style": "../../threadswidget-3.14.0.min.css",
     "webchat": {
         "locale": "ru",
         "package": "FIX_ME",
@@ -131,7 +131,7 @@
                 },
                 "ChatWelcome": {
                     "margin": "0 auto",
-                    "headerMargin": "0 0 20px 0",
+                    "headerMargin": "0 0 18px 0",
                     "subtextTextAlign": "center",
                     "subtextFontSize": "12px",
                     "textTextAlign": "center",
