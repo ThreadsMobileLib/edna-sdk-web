@@ -21,7 +21,7 @@
         </script>
 
         <!-- BEGIN THREADS {literal} -->
-        <script type="text/javascript">!function(configurationFile){"use strict";configurationFile=configurationFile||"/settings.json";var e=window,t=document;function n(t,n){var a=setInterval(function(){e.ThreadsWidget&&!e.ThreadsWidget.isDummy&&(clearInterval(a),e.ThreadsWidget[t]&&e.ThreadsWidget[t](n))},100)}e.ThreadsWidget={isDummy:!0,showChat:function(){n("showChat")},hideChat:function(){n("hideChat")},onHideChat:function(e){n("onHideChat",e)},onScenarios:function(e){n("onScenarios",e)}};var a,s=(a=new XMLHttpRequest,function(e,t,n,s){a.onreadystatechange=function(){if(4===a.readyState)if(200===this.status)n(a.response);else{if("function"!=typeof s)throw new Error(a.response);s(a)}},a.open(e,t),a.send()});function i(e){if(e.webchat&&(e.webchat.filename=e.filename),e.style&&(e.webchat.style=e.style),sessionStorage.setItem("__threadsWidget",JSON.stringify(e.webchat)),e.filename){var n=t.createElement("script");n.type="text/javascript",n.async=!0,n.src=e.filename;var a=t.getElementsByTagName("script")[0];a?a.parentNode.insertBefore(n,a):t.body.appendChild(n)}else console&&console.error("Invalid bundle")}function o(){s("GET",configurationFile+"?rnd="+Math.random(),function(e){var t=JSON.parse(e);i(t)})}"complete"===t.readyState?o():e.attachEvent?e.attachEvent("onload",o):e.addEventListener("load",o,!1)}("settings.json");</script>
+        <script type="text/javascript">!function(configurationFile){"use strict";configurationFile=configurationFile||"/settings.json";var e=window,t=document;e.ThreadsWidget={isDummy:!0},["hideInvite","version","commitHash","showChat","hideChat","onHideChat","onScenarios","onLoad"].forEach(function(t){e.ThreadsWidget[t]=function(n){var a,s,i;a=t,s=n,i=setInterval(function(){e.ThreadsWidget&&!e.ThreadsWidget.isDummy&&(clearInterval(i),e.ThreadsWidget[a]&&e.ThreadsWidget[a](s))},100)}});var n,a=(n=new XMLHttpRequest,function(e,t,a,s){n.onreadystatechange=function(){if(4===n.readyState)if(200===this.status)a(n.response);else{if("function"!=typeof s)throw new Error(n.response);s(n)}},n.open(e,t),n.send()});function s(e){if(e.webchat&&(e.webchat.filename=e.filename),e.style&&(e.webchat.style=e.style),sessionStorage.setItem("__threadsWidget",JSON.stringify(e.webchat)),e.filename){var n=t.createElement("script");n.type="text/javascript",n.async=!0,n.src=e.filename;var a=t.getElementsByTagName("script")[0];a?a.parentNode.insertBefore(n,a):t.body.appendChild(n)}else console&&console.error("Invalid bundle")}function i(){a("GET",configurationFile+"?rnd="+Math.random(),function(e){var t=JSON.parse(e);s(t)})}"complete"===t.readyState?i():e.attachEvent?e.attachEvent("onload",i):e.addEventListener("load",i,!1)}("settings.json");</script>
         <!-- {/literal} END THREADS -->
 
         <script>
@@ -34,6 +34,21 @@
                 // функция обратного вызова при поступлении сценариев
                 ThreadsWidget.onScenarios(function(scenarios) {
                     console && console.log('Scenarios', scenarios)
+                })
+
+                // version
+                ThreadsWidget.version(function(version) {
+                    console && console.log('Chat version', version)
+                })
+
+                // commitHash
+                ThreadsWidget.commitHash(function(commitHash) {
+                    console && console.log('Chat commitHash', commitHash)
+                })
+
+                // функция обратного вызова при загрузке чата
+                ThreadsWidget.onLoad(function() {
+                    console && console.log('Chat loaded')
                 })
             }
         </script>
