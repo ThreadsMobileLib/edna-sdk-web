@@ -1,6 +1,6 @@
 {
-    "filename": "../../threadswidget-3.18.0.min.js",
-    "style": "../../threadswidget-3.18.0.min.css",
+    "filename": "../../threadswidget-3.19.0.min.js",
+    "style": "../../threadswidget-3.19.0.min.css",
     "webchat": {
         "locale": "ru",
         "package": "FIX_ME",
@@ -14,7 +14,7 @@
         },
         "hideWelcome": false,
         "clientId": "clientId",
-        "disableGeoRequest": false,
+        "enableGeoRequest": false,
         "disableWebNotification": false,
         "clientData": "clientData",
         "webNotification": {
@@ -144,7 +144,8 @@
                     "feedbackColor": "#2f2f2f",
                     "feedbackBackgroundColor": "#fff",
                     "feedbackFontSize": "17.3px",
-                    "feedbackPlaceholderColor": "#676767"
+                    "feedbackPlaceholderColor": "#676767",
+                    "feedbackLimiterColor": "#676767"
                 },
                 "ChatInput": {
                     "placeholderColor": "#fff",
