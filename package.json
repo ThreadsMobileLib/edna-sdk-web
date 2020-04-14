@@ -1,0 +1,31 @@
+{
+  "name": "threads-sdk-web-gate",
+  "version": "3.20.0",
+  "description": "Threads enables businesses and consumers to connect through conversational interfaces.",
+  "main": "threadswidget-3.20.0.min.js",
+  "directories": {
+    "example": "examples"
+  },
+  "scripts": {
+    "test": "exit 0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ThreadsMobileLib/threads-sdk-web-gate.git"
+  },
+  "keywords": [
+    "chat",
+    "support",
+    "messenger",
+    "application",
+    "bots",
+    "chat-bots",
+    "threads"
+  ],
+  "author": "info@threads.im",
+  "license": "UNLICENSED",
+  "bugs": {
+    "url": "https://github.com/ThreadsMobileLib/threads-sdk-web-gate/issues"
+  },
+  "homepage": "https://github.com/ThreadsMobileLib/threads-sdk-web-gate/wiki"
+}
