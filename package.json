@@ -1,8 +1,8 @@
 {
   "name": "threads-sdk-web-gate",
-  "version": "3.20.0",
+  "version": "3.21.0",
   "description": "Threads enables businesses and consumers to connect through conversational interfaces.",
-  "main": "threadswidget-3.20.0.min.js",
+  "main": "threadswidget-3.21.0.min.js",
   "directories": {
     "example": "examples"
   },

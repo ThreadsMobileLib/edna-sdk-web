@@ -1,6 +1,6 @@
 {
-    "filename": "../../threadswidget-3.20.0.min.js",
-    "style": "../../threadswidget-3.20.0.min.css",
+    "filename": "../../threadswidget-3.21.0.min.js",
+    "style": "../../threadswidget-3.21.0.min.css",
     "webchat": {
         "locale": "ru",
         "package": "FIX_ME",
@@ -182,7 +182,8 @@
                     "fontSize": "12px",
                     "color": "#fff",
                     "backgroundColor": "#008aff",
-                    "marginTop": "8px"
+                    "marginTop": "8px",
+                    "linkColor": "#ffffff"
                 },
                 "MessageOperator": {
                     "attachmentImageInfoColor": "#56606b",
@@ -194,7 +195,8 @@
                     "dateColor": "#676767",
                     "dateFontSize": "8px",
                     "fontSize": "12px",
-                    "marginTop": "8px"
+                    "marginTop": "8px",
+                    "linkColor": "#008aff"
                 },
                 "Preview": {
                     "buttonBackgroundImage": "data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiIHN0YW5kYWxvbmU9Im5vIj8+CjxzdmcKICAgeG1sbnM6ZGM9Imh0dHA6Ly9wdXJsLm9yZy9kYy9lbGVtZW50cy8xLjEvIgogICB4bWxuczpjYz0iaHR0cDovL2NyZWF0aXZlY29tbW9ucy5vcmcvbnMjIgogICB4bWxuczpyZGY9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkvMDIvMjItcmRmLXN5bnRheC1ucyMiCiAgIHhtbG5zOnN2Zz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciCiAgIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIKICAgaWQ9InN2ZzgzMSIKICAgdmVyc2lvbj0iMS4xIgogICB3aWR0aD0iMzgiCiAgIGhlaWdodD0iMzgiCiAgIHZpZXdCb3g9IjAgMCAzOCAzOCI+CiAgPG1ldGFkYXRhCiAgICAgaWQ9Im1ldGFkYXRhODM3Ij4KICAgIDxyZGY6UkRGPgogICAgICA8Y2M6V29yawogICAgICAgICByZGY6YWJvdXQ9IiI+CiAgICAgICAgPGRjOmZvcm1hdD5pbWFnZS9zdmcreG1sPC9kYzpmb3JtYXQ+CiAgICAgICAgPGRjOnR5cGUKICAgICAgICAgICByZGY6cmVzb3VyY2U9Imh0dHA6Ly9wdXJsLm9yZy9kYy9kY21pdHlwZS9TdGlsbEltYWdlIiAvPgogICAgICAgIDxkYzp0aXRsZT5QYXRoPC9kYzp0aXRsZT4KICAgICAgPC9jYzpXb3JrPgogICAgPC9yZGY6UkRGPgogIDwvbWV0YWRhdGE+CiAgPGRlZnMKICAgICBpZD0iZGVmczgzNSIgLz4KICA8dGl0bGUKICAgICBpZD0idGl0bGU4MjciPlBhdGg8L3RpdGxlPgogIDxwYXRoCiAgICAgc3R5bGU9ImZpbGw6I2ZmZmZmZjtmaWxsLW9wYWNpdHk6MTtmaWxsLXJ1bGU6ZXZlbm9kZDtzdHJva2Utd2lkdGg6Mi43MjAyODE2IgogICAgIGlkPSJwYXRoODI5IgogICAgIGQ9Im0gMjkuNjc0Mzg2LDI5LjY3MzYxOSBhIDEuODY2MTEzMywxLjg2NjExMzMgMCAwIDEgLTIuNjQ2ODM1LDAgbCAtOC4wMjc1NSwtOC4wMzAyNyAtOC4wMjc1NTMsOC4wMzAyNyBhIDEuODY2MTEzMywxLjg2NjExMzMgMCAwIDEgLTIuNjQ2ODMzOCwwIDEuODY4ODMzNiwxLjg2ODgzMzYgMCAwIDEgMCwtMi42NDY4MzQgTCAxNi4zNTU4ODcsMTguOTk5MjM0IDguMzI1NjE0MiwxMC45NzE2ODMgQSAxLjg3MTU5NDUsMS44NzE1OTQ1IDAgMSAxIDEwLjk3MjQ0OCw4LjMyNDg0OTEgbCA4LjAyNzU1Myw4LjAzMDI2OTkgOC4wMjc1NSwtOC4wMzAyNjk5IGEgMS44NzE1OTQ2LDEuODcxNTk0NiAwIDEgMSAyLjY0NjgzNSwyLjY0NjgzMzkgbCAtOC4wMzAyNzIsOC4wMjc1NTEgOC4wMzAyNzIsOC4wMjc1NTEgYSAxLjg2ODgzMzYsMS44Njg4MzM2IDAgMCAxIDAsMi42NDY4MzQgeiIgLz4KPC9zdmc+Cg==",
@@ -226,10 +228,8 @@
                 "ChatButton": {
                     "backgroundImage": "data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiIHN0YW5kYWxvbmU9Im5vIj8+CjxzdmcKICAgeG1sbnM6ZGM9Imh0dHA6Ly9wdXJsLm9yZy9kYy9lbGVtZW50cy8xLjEvIgogICB4bWxuczpjYz0iaHR0cDovL2NyZWF0aXZlY29tbW9ucy5vcmcvbnMjIgogICB4bWxuczpyZGY9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkvMDIvMjItcmRmLXN5bnRheC1ucyMiCiAgIHhtbG5zOnN2Zz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciCiAgIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIKICAgaGVpZ2h0PSI1MTJweCIKICAgd2lkdGg9IjUxMnB4IgogICB4bWw6c3BhY2U9InByZXNlcnZlIgogICBlbmFibGUtYmFja2dyb3VuZD0ibmV3IDAgMCA2NCA2NCIKICAgdmlld0JveD0iMCAwIDY0IDY0IgogICB5PSIwcHgiCiAgIHg9IjBweCIKICAgaWQ9IkxheWVyXzEiCiAgIHZlcnNpb249IjEuMSI+PG1ldGFkYXRhCiAgIGlkPSJtZXRhZGF0YTI2NDkiPjxyZGY6UkRGPjxjYzpXb3JrCiAgICAgICByZGY6YWJvdXQ9IiI+PGRjOmZvcm1hdD5pbWFnZS9zdmcreG1sPC9kYzpmb3JtYXQ+PGRjOnR5cGUKICAgICAgICAgcmRmOnJlc291cmNlPSJodHRwOi8vcHVybC5vcmcvZGMvZGNtaXR5cGUvU3RpbGxJbWFnZSIgLz48ZGM6dGl0bGU+PC9kYzp0aXRsZT48L2NjOldvcms+PC9yZGY6UkRGPjwvbWV0YWRhdGE+PGRlZnMKICAgaWQ9ImRlZnMyNjQ3IiAvPgo8ZwogICBpZD0iUXVlc3Rpb24tbWFyayI+Cgk8Y2lyY2xlCiAgIGlkPSJjaXJjbGUyNjA3IgogICBmaWxsPSIjRkZGRkZGIgogICByPSIyIgogICBjeT0iNTAuMzYyNTk4NCIKICAgY3g9IjMxLjk3ODExMzIiIC8+Cgk8cGF0aAogICBpZD0icGF0aDI2MDkiCiAgIGZpbGw9IiNGRkZGRkYiCiAgIGQ9Ik0zMS41MzMxOTkzLDEzLjM3OTljLTYuMjY4NTk4NiwwLTEwLjE2MjA4NjUsMy44OTM2MDA1LTEwLjE2MjA4NjUsMTAuMTYyMDk5OGMwLDAuNTUyNywwLjQ0NzE4NzQsMSwxLDEgICBjMC41NTI2ODY3LDAsMS0wLjQ0NzMsMS0xYzAtNS4xODc1LDIuOTc0NTg2NS04LjE2MjA5OTgsOC4xNjIwODY1LTguMTYyMDk5OGM3Ljg3NTk5OTUsMCw5LjA1MTcwMDYsNS42NzE4OTk4LDkuMDUxNzAwNiw5LjA1MjcgICBjMCwzLjI4ODA5OTMtMi43MDIwOTg4LDcuMDI5MzAwNy02LjI4NTA5OSw4LjcwMTIwMDVjLTQuMDU1Njg4OSwxLjg5MTU5NzctMy4zNDY2ODczLDguNTI4MzAxMi0zLjMxNDUwMDgsOC44MDk2MDA4ICAgYzAuMDU3Njk5MiwwLjUxMDcwMDIsMC40OTAyOTkyLDAuODg2Njk5NywwLjk5MjIwMDksMC44ODY2OTk3YzAuMDM4MDk3NCwwLDAuMDc2MTk4Ni0wLjAwMjAwMjcsMC4xMTQyOTk4LTAuMDA2ODAxNiAgIGMwLjU0ODc5NzYtMC4wNjI1LDAuOTQzMzEzNi0wLjU1NzcwMTEsMC44Nzk4OTgxLTEuMTA2NDk4N2MtMC4wMDU4OTc1LTAuMDU0Njk4OS0wLjU0Nzg5NzMtNS41MDA5OTk1LDIuMTczODAxNC02Ljc3MDUwMDIgICBjNC4zMTA1MDExLTIuMDExNjk5Nyw3LjQzOTM5OTctNi40MzM2MDE0LDcuNDM5Mzk5Ny0xMC41MTM3MDA1QzQyLjU4NDg5OTksMTcuNTExNjk5NywzOC40NTMxMTM2LDEzLjM3OTksMzEuNTMzMTk5MywxMy4zNzk5eiIgLz4KCQo8L2c+CjxnCiAgIGlkPSJnMjYxNCI+CjwvZz4KPGcKICAgaWQ9ImcyNjE2Ij4KPC9nPgo8ZwogICBpZD0iZzI2MTgiPgo8L2c+CjxnCiAgIGlkPSJnMjYyMCI+CjwvZz4KPGcKICAgaWQ9ImcyNjIyIj4KPC9nPgo8ZwogICBpZD0iZzI2MjQiPgo8L2c+CjxnCiAgIGlkPSJnMjYyNiI+CjwvZz4KPGcKICAgaWQ9ImcyNjI4Ij4KPC9nPgo8ZwogICBpZD0iZzI2MzAiPgo8L2c+CjxnCiAgIGlkPSJnMjYzMiI+CjwvZz4KPGcKICAgaWQ9ImcyNjM0Ij4KPC9nPgo8ZwogICBpZD0iZzI2MzYiPgo8L2c+CjxnCiAgIGlkPSJnMjYzOCI+CjwvZz4KPGcKICAgaWQ9ImcyNjQwIj4KPC9nPgo8ZwogICBpZD0iZzI2NDIiPgo8L2c+Cjwvc3ZnPg==",
                     "backgroundColor": "#008aff",
-                    "width": "67px",
-                    "height": "67px",
-                    "borderRadius": "50%",
-                    "boxShadow": "0 0 28px 7px rgba(0,0,0,.15)"
+                    "width": "107px",
+                    "height": "107px"
                 },
                 "QuickQuestions": {
                     "containerBackground": "#f1f1f1",
@@ -248,6 +248,10 @@
                     "backgroundColor": "#efefef",
                     "errorTextColor": "red",
                     "errorTextFontSize": "18px"
+                },
+                "Link": {
+                    "outMarginRight": "10px",
+                    "inMarginLeft": "40px"
                 }
             },
             "mobile": {
