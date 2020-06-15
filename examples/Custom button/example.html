@@ -248,6 +248,34 @@
                 // функция обратного вызова при загрузке чата
                 ThreadsWidget.onLoad(function() {
                     console && console.log('Chat loaded')
+
+                    ThreadsWidget.on('hideChat', function() {
+                        console && console.log('hideChat')
+                    })
+
+                    ThreadsWidget.on('showChat', function() {
+                        console && console.log('showChat')
+                    })
+                
+                    ThreadsWidget.on('closeChat', function() {
+                        console && console.log('closeChat')
+                    })
+
+                    ThreadsWidget.on('openChat', function() {
+                        console && console.log('openChat')
+                    })
+
+                    ThreadsWidget.on('showInviteMessage', function() {
+                        console && console.log('showInviteMessage')
+                    })
+
+                    ThreadsWidget.on('hideInviteMessage', function() {
+                        console && console.log('hideInviteMessage')
+                    })
+
+                    ThreadsWidget.on('changeOperationMode', function(data) {
+                        console && console.log('changeOperationMode', data)
+                    })
                 })
             })
         </script>
