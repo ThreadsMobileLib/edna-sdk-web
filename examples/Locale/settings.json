@@ -52,6 +52,26 @@
             "phone": true,
             "email": true,
             "name": true
+        },
+        "locales": {
+            "ChatWelcome": {
+                "remained": {
+                    "ru": "Осталось"
+                },
+                "identification": {
+                    "pre": {
+                        "notice": {
+                            "ru": "Расскажите о себе.",
+                            "en": "Please tell us something about yourself."
+                        }
+                    }
+                }
+            },
+            "ChatInput": {
+                "placeholder": {
+                    "en": "Type your awesome text here..."
+                }
+            }
         }
     }
 }

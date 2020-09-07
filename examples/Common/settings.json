@@ -49,9 +49,14 @@
             }
         },
         "inactivityForm": {
-            "phone": true,
+            "phone": false,
             "email": true,
             "name": true
-        }
+        },
+        "hideWelcome": true,
+        "maximizeOnInit": true,
+        "disableFormatSimpleMessages": true,
+        "enableGeoRequest": true,
+        "connectDelay": 3600
     }
 }

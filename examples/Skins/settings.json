@@ -52,6 +52,19 @@
             "phone": true,
             "email": true,
             "name": true
+        },
+        "theme": {
+            "skin": {
+                "name": "halcyon",
+                "colorMain": "#D8190F",
+                "colorSecond": "#FD9649",
+                "colorLines": "#31827C",
+                "colorSubText": "#31827C",
+                "colorText": "#010101",
+                "colorBackground": "#fff",
+                "width": "366px",
+                "height": "620px"
+            }
         }
     }
 }

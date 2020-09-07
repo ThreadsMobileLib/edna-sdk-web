@@ -1,88 +1,57 @@
 {
-    "filename": "../../threadswidget-3.28.3.min.js",
-    "style": "../../threadswidget-3.28.3.min.css",
+    "filename": "../../threadswidget-3.29.0.min.js",
+    "style": "../../threadswidget-3.29.0.min.css",
     "webchat": {
         "locale": "ru",
         "package": "FIX_ME",
         "uid": "FIX_ME",
-        "pushserver": "FIX_ME",
         "websocket": "FIX_ME",
         "datastore": "FIX_ME",
+        "apiUrl": "FIX_ME",
+        "openGraph": true,
         "history": {
             "url": "FIX_ME",
             "count": 20
         },
-        "hideWelcome": false,
-        "clientId": "clientId",
-        "enableGeoRequest": false,
-        "disableWebNotification": false,
-        "clientData": "clientData",
+        "unauthorizedHistory": {
+            "url": "FIX_ME",
+            "count": 20,
+            "enable": true,
+            "cookie": {
+                "Max-Age": 15552000
+            }
+        },
         "webNotification": {
             "title": "Threads Chat",
             "icon": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADIAAAAyCAMAAAAp4XiDAAAABGdBTUEAALGPC/xhBQAAAAFzUkdCAK7OHOkAAABOUExURUxpcejo6Onp6enp6eTk5Onp6erq6uvr6+np6eXl5enp6ejo6Ovr6+zs7Ojo6Onp6ePj4+rq6pmZmdPT06enp+bm5p6entra2sLCwrm5ueNweO8AAAARdFJOUwBOiKUcunn78A3dnllqk8XwLooT9gAAAWVJREFUSMedllmShSAMRXHggYq+YhLd/0bbtluLJODA/SR1yiQmFxgj6tTEeymE7PmkOnarduRCRxJ8bK+BQSc05KGuljopWWfyqzLADlUp4qMv9aFJNfpGDUqu++pbfSHT6AdqXtSRqKeiUR+Cp6dn3zrcXW+d2eQs6fVRTo0CYQd2KKBQ/T8l6CNhNqdmxMi/2UFz5SNiY1BFw/4R9O3VAK0o/PuZEZ3NEJlReNwQjvIySCgzvnVYvENEx5R+h2jFprfIhEu5Rzjr3yI9I9t702QtmcBHDiIOxwVFFogsFCGJBYgEmlivLzMjeW3lc3JmY4Rs2dbkia7rmp/j/VcquvYxQg1A0bFc4IotdCxhMQhIQBytmHUmIeA0I1jkkASQ07SxXQRzoRDbxWlK9gqxwJQO63uC1NBgvcsTzkODPWzc26w8svGSy6LkSiq5+Aqu15JLvOipUPIgKXn2FD2uHj3hfgChdIQNPQdYDAAAAABJRU5ErkJggg=="
         },
-        "chatHeader": {
-            "title": "Добро пожаловать в чат!",
-            "search": "Поиск оператора",
-            "operatorSubTitle": "оператор"
-        },
-        "welcome": {
-            "pre": {
-                "text": "Появились вопросы к нам? Давайте обсудим здесь.",
-                "notice": "Представьтесь, пожалуйста, и начнём."
-            },
-            "post": {
-                "text": "Спасибо за то, что представились.",
-                "notice": "Это необходимо для идентификации."
-            }
-        },
-        "chatEndPoll": {
-            "text": {
-                "ru": "Специалист ответил на все ваши вопросы, продолжить консультацию?",
-                "en": "Do you have any other questions for us?"
-            },
-            "yes": {
-                "ru": "Да",
-                "en": "Yes"
-            },
-            "no": {
-                "ru": "Нет",
-                "en": "No"
-            }
-        },
-        "typing": "печатает...",
         "checkURL": "https://pushserver.mfms.ru/brooma/health",
         "schedule": {
             "interval": 1000
         },
+        "welcomeForm": {
+            "pre": {
+                "text": true,
+                "notice": true
+            },
+            "phone": {
+                "visible": true,
+                "required": false,
+                "mask": "+7 (XXX) XXX-XX-XX"
+            },
+            "email": {
+                "visible": true,
+                "required": false
+            },
+            "name": {
+                "visible": true,
+                "required": false
+            }
+        },
         "inactivityForm": {
             "phone": true,
-            "email": false,
-            "name": true,
-            "text": "Чат будет доступен в ${ day }. c ${ time }",
-            "sent": "Ваше сообщение доставлено в&nbsp;контактный центр. Ожидайте ответа оператора."
-        },
-        "activePages": [],
-        "socialLinks": {
-            "visible": false,
-            "text": {
-                "ru": "Спросить в мессенджере",
-                "en": "Ask in the messenger"
-            },
-            "buttons": [
-                {
-                    "url": "https://vk.com/",
-                    "tooltip": "VK",
-                    "image": "data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iaXNvLTg4NTktMSI/Pgo8IS0tIEdlbmVyYXRvcjogQWRvYmUgSWxsdXN0cmF0b3IgMTYuMC4wLCBTVkcgRXhwb3J0IFBsdWctSW4gLiBTVkcgVmVyc2lvbjogNi4wMCBCdWlsZCAwKSAgLS0+CjwhRE9DVFlQRSBzdmcgUFVCTElDICItLy9XM0MvL0RURCBTVkcgMS4xLy9FTiIgImh0dHA6Ly93d3cudzMub3JnL0dyYXBoaWNzL1NWRy8xLjEvRFREL3N2ZzExLmR0ZCI+CjxzdmcgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB4bWxuczp4bGluaz0iaHR0cDovL3d3dy53My5vcmcvMTk5OS94bGluayIgdmVyc2lvbj0iMS4xIiBpZD0iQ2FwYV8xIiB4PSIwcHgiIHk9IjBweCIgd2lkdGg9IjI0cHgiIGhlaWdodD0iMjRweCIgdmlld0JveD0iMCAwIDMxLjMzNCAzMS4zMzQiIHN0eWxlPSJlbmFibGUtYmFja2dyb3VuZDpuZXcgMCAwIDMxLjMzNCAzMS4zMzQ7IiB4bWw6c3BhY2U9InByZXNlcnZlIj4KPGc+Cgk8cGF0aCBkPSJNMzAuMTA5LDI0LjcwN2MtMC4xNjcsMC4wMjEtMC4zMzUsMC4wNDctMC41MDMsMC4wNDhjLTEuNjQ3LDAuMDAzLTMuMjk0LTAuMDAxLTQuOTQsMC4wMDUgICBjLTAuMjI5LDAuMDAxLTAuNDIzLTAuMDg0LTAuNTkzLTAuMjIxYy0wLjM0NC0wLjI4MS0wLjY5OC0wLjU1OC0xLjAxNS0wLjg3Yy0wLjgyNC0wLjgxNy0xLjYyNy0xLjY1Ny0yLjQ0NS0yLjQ4MiAgIGMtMC4yNTUtMC4yNTctMC41MjctMC40OTQtMC43OTUtMC43MzdjLTAuMTM5LTAuMTMxLTAuMzEzLTAuMTU5LTAuNDkzLTAuMTU2Yy0wLjI0MSwwLjAwNi0wLjQ0LDAuMTE1LTAuNTM1LDAuMzM4ICAgYy0wLjA4NywwLjIwMi0wLjE1OSwwLjQyMS0wLjE4MiwwLjYzN2MtMC4wNCwwLjM5MS0wLjA0MiwwLjc4NC0wLjA1LDEuMTc1Yy0wLjAwOSwwLjQzOC0wLjAyMiwwLjg3OS0wLjE0NSwxLjMwNSAgIGMtMC4wNTUsMC4xODgtMC4xMzMsMC4zNzktMC4yMywwLjU0OWMtMC4xNywwLjI5Mi0wLjQzOCwwLjQ1MS0wLjc3OSwwLjQ1OGMtMS40MzgsMC4wMzMtMi44NzcsMC4wNTQtNC4zMTMtMC4wNCAgIGMtMC4yNjYtMC4wMi0wLjUxMS0wLjEwNC0wLjc0OC0wLjIyMWMtMS4zNC0wLjY1OC0yLjUxNy0xLjUzMi0zLjU0LTIuNjIyYy0xLjI0NS0xLjMyNS0yLjM3NS0yLjc0Ni0zLjUwNS00LjE2NyAgIGMtMS41MjEtMS45MTYtMi44MzYtMy45NjYtNC4wMTgtNi4xMDRjLTAuNDMyLTAuNzc5LTAuODQ5LTEuNTY5LTEuMTU5LTIuNDA4Yy0wLjE1My0wLjQxNC0wLjE1My0wLjgyOS0wLjAzOC0xLjI0NiAgIGMwLjAzMy0wLjEyNCwwLjA5Mi0wLjI0NSwwLjE2LTAuMzU0QzAuMzQsNy40MzQsMC40OTEsNy4zNDUsMC42ODQsNy4zNDFDMC43NTIsNy4zNCwwLjgyMyw3LjMzOCwwLjg5MSw3LjMzOCAgIGMxLjQ5NCwwLDIuOTg2LDAuMDA2LDQuNDc5LTAuMDA1QzUuNjY1LDcuMzMxLDUuODkxLDcuNDMsNi4wODksNy42M0M2LjQ1Nyw3Ljk5OCw2Ljc0Myw4LjQyNyw3LDguODczICAgYzAuMjgsMC40ODYsMC41NiwwLjk3NSwwLjgwNywxLjQ3OWMwLjU0MywxLjEwOSwxLjIwOSwyLjE0MywxLjkxNCwzLjE1MWMwLjM0NCwwLjQ5MSwwLjcxNiwwLjk2MywxLjA3MywxLjQ0NCAgIGMwLjE2NiwwLjIyNCwwLjM5NiwwLjMwOSwwLjY2MSwwLjMxNmMwLjI1OCwwLjAwOSwwLjM2My0wLjA5NiwwLjM3My0wLjM1NGMwLjAwMy0wLjA2MiwwLjAwMi0wLjEyMywwLjAwMi0wLjE4NSAgIGMwLTEuNjg2LDAtMy4zNy0wLjAwMi01LjA1NWMwLTAuMTMxLDAtMC4yNjMtMC4wMTMtMC4zOTNjLTAuMDMtMC4zMDEtMC4xODktMC40NzctMC40ODctMC41MzUgICBjLTAuMTM1LTAuMDI2LTAuMjczLTAuMDM4LTAuNDEtMC4wNTZjLTAuNDItMC4wNTUtMC41OTQtMC4yMzMtMC42MzgtMC42NTVjLTAuMDY1LTAuNjM3LDAuMjQtMS4xMzQsMC44MzctMS4zNTcgICBjMC4yNTctMC4wOTYsMC41MjMtMC4xMTcsMC43OTUtMC4xMTZjMS4zMzEsMC4wMDIsMi42NjIsMCwzLjk5MywwLjAwMWMwLjI3LDAsMC41NC0wLjAxNCwwLjgwOCwwLjAxICAgYzAuMjgxLDAuMDI3LDAuNTY1LDAuMDY0LDAuODM4LDAuMTQ0YzAuNTgyLDAuMTY4LDAuOTE5LDAuNTY0LDAuOTg1LDEuMTc0YzAuMDE3LDAuMTQ2LDAuMDIxLDAuMjkyLDAuMDIxLDAuNDM4ICAgYzAuMDAyLDEuMDIzLDAuMDAyLDIuMDQ2LDAuMDAyLDMuMDY5YzAsMS4wODUtMC4wMDEsMi4xNywwLjAwMiwzLjI1NWMwLDAuMTA2LDAuMDA5LDAuMjE3LDAuMDM4LDAuMzE4ICAgYzAuMDk1LDAuMzI5LDAuNDUzLDAuNDM4LDAuNzU0LDAuMjMxYzAuODg3LTAuNjExLDEuNDY5LTEuNDYyLDEuOTE3LTIuNDA5YzAuNDE0LTAuODc1LDAuNzcxLTEuNzc3LDEuMTYtMi42NjQgICBjMC4zMTEtMC43MDMsMC42My0xLjQwMiwwLjk1NS0yLjA5OWMwLjA3OS0wLjE3MywwLjE5Ni0wLjMzLDAuMzA1LTAuNDg4YzAuMDk5LTAuMTQyLDAuMjI5LTAuMjA0LDAuNDEyLTAuMjA0ICAgYzEuOTMzLDAuMDA2LDMuODYyLDAuMDA1LDUuNzk0LDAuMDAzYzAuNDczLDAsMC44NDgsMC4xOTIsMS4xNDMsMC41NTFjMC4xMDQsMC4xMjgsMC4xNDcsMC4yNzgsMC4xNzQsMC40NDMgICBjMC4xMTUsMC43NjEtMC4xNDYsMS40MjQtMC41MSwyLjA2M2MtMC4zNDUsMC42MDQtMC43NTUsMS4xNjEtMS4yMDEsMS42OWMtMC45MjQsMS4wOTQtMS44MywyLjIwMS0yLjYyMiwzLjM5NiAgIGMtMC4yMDQsMC4zMDctMC4zNzgsMC42MzQtMC41NjQsMC45NTFjLTAuMTM3LDAuMjMyLTAuMTE5LDAuNDU1LDAuMDUzLDAuNjYyYzAuMzQ5LDAuNDIsMC42ODcsMC44NTIsMS4wNTQsMS4yNTMgICBjMC44NzIsMC45NTYsMS43NjYsMS44ODksMi42NDMsMi44NGMwLjI4MSwwLjMwNiwwLjUzNSwwLjYzNCwwLjc5NiwwLjk1OGMwLjA4NiwwLjEwNywwLjE1LDAuMjMyLDAuMjM0LDAuMzQxICAgQzMxLjc1MSwyMy4zMywzMC45MzUsMjQuNTk4LDMwLjEwOSwyNC43MDd6IiBmaWxsPSIjRkZGRkZGIi8+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPC9zdmc+Cg=="
-                }
-            ]
-        },
-        "theme": {},
-        "webview": {
-            "loadError": {
-                "ru": "Ошибка загрузки данных",
-                "en": "Error loading data from server"
-            }
+            "email": true,
+            "name": true
         },
         "isContainerHidden": true
     }

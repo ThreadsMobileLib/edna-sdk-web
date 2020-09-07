@@ -52,6 +52,19 @@
             "phone": true,
             "email": true,
             "name": true
+        },
+        "pushNotification": {
+            "enable": true,
+            "firebaseConfig": {
+                "apiKey": "AIzaSyAdDHjCXy3ff-MlfesGMWFK7EMtKUHsH9k",
+                "authDomain": "threadsamurtiger.firebaseapp.com",
+                "databaseURL": "https://threadsamurtiger.firebaseio.com",
+                "projectId": "threadsamurtiger",
+                "storageBucket": "threadsamurtiger.appspot.com",
+                "messagingSenderId": "250225645009",
+                "appId": "1:250225645009:web:ad0d8c7a654fc01cb7bcf0",
+                "measurementId": "G-H4E1HQ106V"
+            }
         }
     }
 }

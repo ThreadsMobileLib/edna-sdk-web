@@ -52,6 +52,52 @@
             "phone": true,
             "email": true,
             "name": true
+        },
+        "theme": {
+            "desktop": {
+                "Chat": {
+                    "width": "330px",
+                    "height": "507px",
+                    "borderRadius": "7px"
+                },
+                "ChatBody": {
+                    "backgroundColor": "#fff"
+                },
+                "MessageClient": {
+                    "pointerType": "2",
+                    "borderTopLeftRadius": "6px",
+                    "borderBottomLeftRadius": "6px",
+                    "borderTopRightRadius": "6px",
+                    "borderBottomRightRadius": "6px",
+                    "attachmentImageInfoColor": "#fff",
+                    "quoteColor": "#fff",
+                    "margin": "0 10px 2px 0",
+                    "fontSize": "14px",
+                    "color": "#fff",
+                    "backgroundColor": "#a5063a"
+                },
+                "MessageOperator": {
+                    "avatarBottom": "0",
+                    "pointerType": "2",
+                    "backgroundColor": "#edf0f1",
+                    "borderTopLeftRadius": "6px",
+                    "borderBottomLeftRadius": "6px",
+                    "borderTopRightRadius": "6px",
+                    "borderBottomRightRadius": "6px",
+                    "attachmentImageInfoColor": "#56606b",
+                    "quoteBorderColor": "#0e8bfd",
+                    "quoteColor": "#000",
+                    "fontSize": "14px",
+                    "notificationJoinTextColor": "#afb1b2",
+                    "notificationLeftTextColor": "#afb1b2"
+                },
+                "Typing": {
+                    "opacity": "0.5",
+                    "color": "#f00",
+                    "fontSize": "20px",
+                    "containerBackground": ""
+                }
+            }
         }
     }
 }
