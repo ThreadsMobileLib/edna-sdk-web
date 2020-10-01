@@ -1,6 +1,6 @@
-# Standard Threads Webchat SDK
+# Standard Threads webchat SDK
 
-Standard Threads Webchat SDK description and examples
+Standard Threads webchat SDK description and examples
 
 [Documentation and guides](../../wiki)
 
