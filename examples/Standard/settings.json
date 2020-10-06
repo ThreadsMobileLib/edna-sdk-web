@@ -1,6 +1,6 @@
 {
-    "filename": "../../threadswidget-3.29.1.min.js",
-    "style": "../../threadswidget-3.29.1.min.css",
+    "filename": "../../threadswidget-3.29.4.min.js",
+    "style": "../../threadswidget-3.29.4.min.css",
     "webchat": {
         "locale": "ru",
         "package": "FIX_ME",
@@ -52,6 +52,31 @@
             "phone": true,
             "email": true,
             "name": true
+        },
+        "theme": {
+            "skin": {
+                "name": "halcyon",
+                "colorMain": "#D8190F",
+                "colorSecond": "#FD9649",
+                "colorLines": "#31827C",
+                "colorSubText": "#31827C",
+                "colorText": "#010101",
+                "colorBackground": "#fff",
+                "width": "366px",
+                "height": "620px"
+            }
+        },
+        "pushNotification": {
+            "enable": true,
+            "firebaseConfig": {
+                "apiKey": "FIX_ME",
+                "authDomain": "FIX_ME",
+                "databaseURL": "FIX_ME",
+                "projectId": "FIX_ME",
+                "storageBucket": "FIX_ME",
+                "messagingSenderId": "FIX_ME",
+                "appId": "FIX_ME"
+            }
         }
     }
 }
