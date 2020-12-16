@@ -5,6 +5,5 @@ Standard edna webchat SDK description and examples
 [Documentation and guides](../../wiki)
 
 Contacts:<br>
-https://threads.im<br>
-support@edna.ru
+https://edna.ru/<br />support@edna.ru
 
