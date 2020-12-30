@@ -28,11 +28,6 @@
 
         <script>
             window.onload = function() {
-                // функция обратного вызова при закрытии чата
-                ThreadsWidget.onHideChat(function() {
-                    console && console.log('Chat closed')
-                })
-
                 // функция обратного вызова при поступлении сценариев
                 ThreadsWidget.onScenarios(function(scenarios) {
                     console && console.log('Scenarios', scenarios)
@@ -51,6 +46,11 @@
                 // функция обратного вызова при загрузке чата
                 ThreadsWidget.onLoad(function() {
                     console && console.log('Chat loaded')
+
+                    // функция обратного вызова при закрытии чата
+                    ThreadsWidget.on('closeChat', function() {
+                        console && console.log('Chat closed')
+                    })
                 })
             }
         </script>

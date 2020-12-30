@@ -175,7 +175,7 @@
             Методы управления видимостью чата для использования с кастомной кнопкой.
 
             См. <a
-                href="https://github.com/ThreadsMobileLib/threads-sdk-web#%D0%A1%D1%82%D1%80%D1%83%D0%BA%D1%82%D1%83%D1%80%D0%B0-%D0%BA%D0%BE%D0%BD%D1%84%D0%B8%D0%B3%D1%83%D1%80%D0%B0%D1%86%D0%B8%D0%BE%D0%BD%D0%BD%D0%BE%D0%B3%D0%BE-%D1%84%D0%B0%D0%B9%D0%BB%D0%B0-settingsjson"><code>webchat/isContainerHidden</code></a>
+                href="https://github.com/ThreadsMobileLib/edna-sdk-web#%D0%A1%D1%82%D1%80%D1%83%D0%BA%D1%82%D1%83%D1%80%D0%B0-%D0%BA%D0%BE%D0%BD%D1%84%D0%B8%D0%B3%D1%83%D1%80%D0%B0%D1%86%D0%B8%D0%BE%D0%BD%D0%BD%D0%BE%D0%B3%D0%BE-%D1%84%D0%B0%D0%B9%D0%BB%D0%B0-settingsjson"><code>webchat/isContainerHidden</code></a>
         </div>
 
         <ul>
@@ -227,11 +227,6 @@
                     })
                 })
 
-                // функция обратного вызова при закрытии чата
-                ThreadsWidget.onHideChat(function() {
-                    $('#custom').fadeIn('fast')
-                })
-
                 // функция обратного вызова при поступлении сценариев
                 ThreadsWidget.onScenarios(function(scenarios) {
                     console && console.log('Scenarios', scenarios)
@@ -251,8 +246,11 @@
                 ThreadsWidget.onLoad(function() {
                     console && console.log('Chat loaded')
 
+                    // Подписка на событие скрытия чата
                     ThreadsWidget.on('hideChat', function() {
                         console && console.log('hideChat')
+
+                        $('#custom').fadeIn('fast')
                     })
 
                     ThreadsWidget.on('showChat', function() {

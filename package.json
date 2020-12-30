@@ -1,8 +1,8 @@
 {
-  "name": "threads-sdk-web-gate",
-  "version": "3.31.0",
+  "name": "edna-sdk-web",
+  "version": "3.33.1",
   "description": "edna enables businesses and consumers to connect through conversational interfaces.",
-  "main": "threadswidget-3.31.0.min.js",
+  "main": "threadswidget-3.33.1.min.js",
   "directories": {
     "example": "examples"
   },
@@ -11,7 +11,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/ThreadsMobileLib/threads-sdk-web-gate.git"
+    "url": "git+https://github.com/ThreadsMobileLib/edna-sdk-web.git"
   },
   "keywords": [
     "chat",
@@ -22,10 +22,10 @@
     "chat-bots",
     "edna"
   ],
-  "author": "info@threads.im",
+  "author": "info@edna.ru",
   "license": "UNLICENSED",
   "bugs": {
-    "url": "https://github.com/ThreadsMobileLib/threads-sdk-web-gate/issues"
+    "url": "https://github.com/ThreadsMobileLib/edna-sdk-web/issues"
   },
-  "homepage": "https://github.com/ThreadsMobileLib/threads-sdk-web-gate/wiki"
+  "homepage": "https://github.com/ThreadsMobileLib/edna-sdk-web/wiki"
 }
