@@ -1,0 +1,142 @@
+/* Стили главного контейнера */
+.ednamb-container {
+    right: 80px;
+    bottom: 80px;
+    z-index: 999999999;
+    position: fixed;
+    transition: visibility .3s, transform .3s, transform-origin .3s, scale .3s, opacity .3s, bottom .3s, top .3s, left .3s, right .3s;
+    opacity: 1;
+}
+
+/* Стили главного контейнера в скрытом состоянии */
+.ednamb-container.ednamb-hide {
+    visibility: hidden;
+    transform: translateY(20%);
+    opacity: 0;
+}
+
+/* Стили блока верхних кнопок */
+.ednamb-top-buttons {
+    position: absolute;
+    right: 0;
+    bottom: 100px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    width: max-content;
+    opacity: 1;
+    transition: visibility .3s, transform .3s, transform-origin .3s, scale .3s, opacity .3s, bottom .3s, top .3s, left .3s, right .3s;
+}
+
+/* Стили блока верхних кнопок в скрытом состоянии */
+.ednamb-top-buttons.ednamb-hide {
+    visibility: hidden;
+    transform: translateY(20%);
+    opacity: 0;
+}
+
+/* Стили кнопки из блока верхних кнопок */
+.ednamb-top-button {
+    font-family: "Open Sans", Arial, sans-serif;
+    background-color: rgba(255, 0, 34, .8);
+    padding: 7px 15px;
+    border-radius: 20px;
+    text-transform: lowercase;
+    color: white;
+    margin: 5px 0;
+    display: block;
+    text-align: center;
+    text-decoration: none;
+    font-size: 14px;
+}
+
+/* Стили кнопки из блока верхних кнопок при наведении */
+.ednamb-top-button:hover {
+    background-color: rgba(225, 0, 4, .8);
+}
+
+/* Стили блока нижних кнопок */
+.ednamb-left-buttons {
+    height: 86px;
+    position: absolute;
+    right: 100px;
+    bottom: 0;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    opacity: 1;
+    transition: visibility .3s, transform .3s, transform-origin .3s, scale .3s, opacity .3s, bottom .3s, top .3s, left .3s, right .3s;
+}
+
+/* Стили блока нижних кнопок в скрытом состоянии */
+.ednamb-left-buttons.ednamb-hide {
+    visibility: hidden;
+    transform: translateX(90px);
+    opacity: 0;
+}
+
+/* Стили кнопки из блока нижних кнопок */
+.ednamb-left-button {
+    background-color: rgba(170, 170, 170, .9);
+    background-size: 20px;
+    background-repeat: no-repeat;
+    background-position: center;
+    border-radius: 30%;
+    display: block;
+    margin: 0 5px;
+    width: 32px;
+    height: 32px;
+}
+
+/* Стили кнопки из блока нижних кнопок при наведении */
+.ednamb-left-button:hover {
+    background-color: rgba(150, 150, 150, 1);
+}
+
+/* Стили главной кнопки */
+.ednamb-button {
+    width: 88px;
+    height: 86px;
+    cursor: pointer;
+    position: absolute;
+    right: 2px;
+    bottom: 3px;
+    background-image: url("button.png");
+    filter: drop-shadow(4px 6px 2px rgba(0, 0, 0, 0.25));
+    transition: all .05s;
+}
+
+/* Стили главной кнопки в активном состоянии */
+.ednamb-button.ednamb-active {
+    filter: drop-shadow(0 0 2px rgba(0, 0, 0, 0.25));
+    right: 0;
+    bottom: 0;
+}
+
+/* Стили мобильной версии */
+@media (max-width: 1024px) and (orientation: portrait) {
+    /* Стили блока верхних кнопок */
+    .ednamb-top-buttons {
+        bottom: 135px;
+        transition-delay: 0s;
+    }
+
+    /* Стили блока верхних кнопок в скрытом состоянии */
+    .ednamb-top-buttons.ednamb-hide {
+        transition-delay: .2s;
+    }
+
+    /* Стили блока нижних кнопок */
+    .ednamb-left-buttons {
+        bottom: 95px;
+        height: auto;
+        right: 0;
+        transition-delay: .2s;
+    }
+
+    /* Стили блока нижних кнопок в скрытом состоянии */
+    .ednamb-left-buttons.ednamb-hide {
+        transform: translateY(30%);
+        transition-delay: 0s;
+    }
+}
