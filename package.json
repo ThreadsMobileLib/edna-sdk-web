@@ -1,8 +1,8 @@
 {
   "name": "edna-sdk-web",
-  "version": "3.48.4",
+  "version": "3.52.0",
   "description": "edna enables businesses and consumers to connect through conversational interfaces.",
-  "main": "threadswidget-3.48.4.min.js",
+  "main": "threadswidget-3.52.0.min.js",
   "directories": {
     "example": "examples"
   },
@@ -13,15 +13,7 @@
     "type": "git",
     "url": "git+https://github.com/ThreadsMobileLib/edna-sdk-web.git"
   },
-  "keywords": [
-    "chat",
-    "support",
-    "messenger",
-    "application",
-    "bots",
-    "chat-bots",
-    "edna"
-  ],
+  "keywords": ["chat", "support", "messenger", "application", "bots", "chat-bots", "edna"],
   "author": "info@edna.ru",
   "license": "UNLICENSED",
   "bugs": {

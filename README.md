@@ -7,4 +7,3 @@ Standard edna webchat SDK description and examples
 Contacts:<br>
 https://edna.ru<br>
 support@edna.ru
-
