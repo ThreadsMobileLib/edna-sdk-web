@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>edna Chat Widget Demo: On demand</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <script
+      src="http://code.jquery.com/jquery-2.2.4.min.js"
+      integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44="
+      crossorigin="anonymous"
+    ></script>
+
+    <style>
+      body {
+        padding: 10px;
+        font-family: 'Open Sans', Arial, sans-serif;
+        font-size: 16px;
+      }
+    </style>
+  </head>
+
+  <body>
+    <script>
+      // place client ID / client data here
+      // var clientId = 'FIX_ME';
+      // var clientData = { foo: "bar" };
+    </script>
+
+    <!-- BEGIN CHAT {literal} -->
+    <script type="text/javascript">
+      function _initEdnaChat(showChat) {
+        !function(n){"use strict";window.ThreadsWidget={},ThreadsWidget.isDummy=!0,["hideInvite","version","commitHash","showChat","hideChat","onHideChat","onScenarios","onLoad","on"].forEach(function(i){ThreadsWidget[i]=function(e){var t,n,a;t=i,n=e,a=setInterval(function(){ThreadsWidget&&!ThreadsWidget.isDummy&&(clearInterval(a),ThreadsWidget[t]&&ThreadsWidget[t](n))},100)}});var i,e=(i=new XMLHttpRequest,function(e,t,n,a){i.onreadystatechange=function(){if(4===i.readyState)if(200===this.status)n(i.response);else{if("function"!=typeof a)throw new Error(i.response);a(i)}},i.open(e,t),i.send()});function t(t){t.webchat&&(t.webchat.filename=t.filename),n&&"string"==typeof n&&(t.webchat.currentLocale=n),n&&"object"==typeof n&&(n.locale&&"string"==typeof n.locale&&(t.webchat.currentLocale=n.locale),n.unavailable&&"boolean"==typeof n.unavailable&&(t.webchat.isUnavailableOnStart=n.unavailable));try{sessionStorage.setItem("__threadsWidget",JSON.stringify(t.webchat))}catch(e){window.__threadsWidget=JSON.stringify(t.webchat)}var e;t.filename?((e=document.createElement("script")).type="text/javascript",e.async=!0,e.src=t.filename,(t=document.getElementsByTagName("script")[0])?t.parentNode.insertBefore(e,t):document.body.appendChild(e)):console.error("Invalid bundle")}function a(){e("GET","settings.json?rnd="+Math.random(),function(e){e=JSON.parse(e);t(e)})}"complete"===document.readyState?a():window.addEventListener("DOMContentLoaded",a,!1)}({});
+
+        ThreadsWidget.onLoad(function() {
+          if (showChat) {
+            ThreadsWidget.showChat();
+          }
+        });
+      }
+
+      $(function() {
+        $('#custom').click(function() {
+          $('#custom').fadeOut('fast', function() {
+            _initEdnaChat(true);
+          });
+        });
+      });
+    </script>
+    <!-- {/literal} END CHAT -->
+  </body>
+</html>
