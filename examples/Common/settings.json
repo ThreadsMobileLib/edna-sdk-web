@@ -1,5 +1,5 @@
 {
-    "filename": "../../threadswidget-4.16.5.min.js",
+    "filename": "../../threadswidget-5.0.0.min.js",
     "webchat": {
         "locale": "ru",
         "package": "FIX_ME",
@@ -53,8 +53,6 @@
         },
         "hideWelcome": true,
         "maximizeOnInit": true,
-        "disableFormatSimpleMessages": true,
-        "enableGeoRequest": true,
-        "connectDelay": 3600
+        "disableFormatSimpleMessages": true
     }
 }
