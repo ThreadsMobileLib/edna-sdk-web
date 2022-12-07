@@ -1,8 +1,8 @@
 {
   "name": "edna-sdk-web",
-  "version": "4.16.6",
+  "version": "5.1.0",
   "description": "edna enables businesses and consumers to connect through conversational interfaces.",
-  "main": "threadswidget-4.16.6.min.js",
+  "main": "threadswidget-5.1.0.min.js",
   "directories": {
     "example": "examples"
   },
