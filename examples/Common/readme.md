@@ -1,1 +1,1 @@
-Пример корректировки поведения Чата посредством настройки параметров `hideWelcome`, `maximizeOnInit`, `disableFormatSimpleMessages`, `enableGeoRequest` и `connectDelay`.
+Пример корректировки поведения Чата посредством настройки параметров `hideWelcome`, `maximizeOnInit`, и `disableFormatSimpleMessages`.
