@@ -1,20 +1,23 @@
 {
-    "filename": "../../threadswidget-5.4.0.min.js",
+    "filename": "../../threadswidget-4.16.10.min.js",
     "webchat": {
         "locale": "ru",
         "package": "FIX_ME",
         "uid": "FIX_ME",
         "websocket": "FIX_ME",
         "datastore": "FIX_ME",
+        "apiUrl": "FIX_ME",
         "openGraph": true,
-        "backend": {
-            "rootUrl": "FIX_ME",
-            "unauthorizedHistory": {
-                "count": 20,
-                "enable": true,
-                "cookie": {
-                    "Max-Age": 15552000
-                }
+        "history": {
+            "url": "FIX_ME",
+            "count": 20
+        },
+        "unauthorizedHistory": {
+            "url": "FIX_ME",
+            "count": 20,
+            "enable": true,
+            "cookie": {
+                "Max-Age": 15552000
             }
         },
         "webNotification": {
@@ -50,6 +53,8 @@
         },
         "hideWelcome": true,
         "maximizeOnInit": true,
-        "disableFormatSimpleMessages": true
+        "disableFormatSimpleMessages": true,
+        "enableGeoRequest": true,
+        "connectDelay": 3600
     }
 }
