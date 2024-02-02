@@ -2,7 +2,7 @@
 
 Standard edna webchat SDK description and examples
 
-[Documentation and guides](../../wiki)
+[Documentation and guides](https://edna-io.github.io/en/web/intro)
 
 Contacts:<br>
 https://edna.ru<br>
