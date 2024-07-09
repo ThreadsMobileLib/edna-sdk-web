@@ -1,5 +1,5 @@
 {
-    "filename": "../../threadswidget-6.12.0.min.js",
+    "filename": "../../threadswidget-6.13.0.min.js",
     "webchat": {
         "locale": "ru",
         "package": "FIX_ME",
@@ -10,8 +10,6 @@
         "backend": {
             "rootUrl": "FIX_ME",
             "unauthorizedHistory": {
-                "count": 20,
-                "enable": true,
                 "cookie": {
                     "Max-Age": 15552000
                 }
