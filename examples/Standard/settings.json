@@ -1,5 +1,5 @@
 {
-    "filename": "../../threadswidget-6.30.2.min.js",
+    "filename": "../../threadswidget-6.31.0.min.js",
     "webchat": {
         "locale": "ru",
         "package": "FIX_ME",
@@ -57,18 +57,6 @@
                 "colorBackground": "#fff",
                 "width": "366px",
                 "height": "620px"
-            }
-        },
-        "pushNotification": {
-            "enable": true,
-            "firebaseConfig": {
-                "apiKey": "FIX_ME",
-                "authDomain": "FIX_ME",
-                "databaseURL": "FIX_ME",
-                "projectId": "FIX_ME",
-                "storageBucket": "FIX_ME",
-                "messagingSenderId": "FIX_ME",
-                "appId": "FIX_ME"
             }
         }
     }
