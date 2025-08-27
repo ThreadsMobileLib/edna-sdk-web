@@ -28,16 +28,24 @@
       // var clientData = { foo: "bar" };
     </script>
 
-    <!-- BEGIN CHAT {literal} -->
+    <!-- BEGIN CHAT -->
     <script type="text/javascript">
       function _initEdnaChat(showChat) {
-        !function(e,a){"use strict";window.ThreadsWidget={},e=e||"/settings.json";function n(e,t){const n=setInterval(function(){ThreadsWidget&&!ThreadsWidget.isDummy&&(clearInterval(n),ThreadsWidget[e]&&ThreadsWidget[e].apply(void 0,t))},100)}ThreadsWidget.isDummy=!0,["hideInvite","version","commitHash","showChat","hideChat","onHideChat","onScenarios","onLoad","on","reInit","init","unInit"].forEach(t=>{ThreadsWidget[t]=(...e)=>{n(t,e)}});const t=function(){const i=new XMLHttpRequest;return function(e,t,n,a){i.onreadystatechange=function(){if(4===i.readyState)if(200===this.status)n(i.response);else{if("function"!=typeof a)throw new Error(i.response);a(i)}},i.open(e,t),i.send()}}();function i(t){t.webchat&&(t.webchat.filename=t.filename),a&&"string"==typeof a&&(t.webchat.currentLocale=a),a&&"object"==typeof a&&(a.locale&&"string"==typeof a.locale&&(t.webchat.currentLocale=a.locale),a.unavailable&&"boolean"==typeof a.unavailable&&(t.webchat.isUnavailableOnStart=a.unavailable));try{sessionStorage.setItem("__threadsWidget",JSON.stringify(t.webchat))}catch(e){window.__threadsWidget=JSON.stringify(t.webchat)}if(t.filename){const e=document.createElement("script"),n=(e.type="text/javascript",e.async=!0,e.src=t.filename,document.getElementsByTagName("script")[0]);n?n.parentNode.insertBefore(e,n):document.body.appendChild(e)}else console.error("Invalid bundle")}function o(){t("GET",e+"?rnd="+Math.random(),function(e){const t=JSON.parse(e);i(t)})}"complete"===document.readyState?o():window.addEventListener("DOMContentLoaded",o,!1)}("settings.json",{});
+        if (!window.ThreadsWidget) {
+          !function(e,a){"use strict";window.ThreadsWidget={},e=e||"/settings.json";function n(e,t){const n=setInterval(function(){ThreadsWidget&&!ThreadsWidget.isDummy&&(clearInterval(n),ThreadsWidget[e]&&ThreadsWidget[e].apply(void 0,t))},100)}ThreadsWidget.isDummy=!0,["hideInvite","version","commitHash","showChat","hideChat","onHideChat","onScenarios","onLoad","on","reInit","init","unInit"].forEach(t=>{ThreadsWidget[t]=(...e)=>{n(t,e)}});const t=function(){const i=new XMLHttpRequest;return function(e,t,n,a){i.onreadystatechange=function(){if(4===i.readyState)if(200===this.status)n(i.response);else{if("function"!=typeof a)throw new Error(i.response);a(i)}},i.open(e,t),i.send()}}();function i(t){t.webchat&&(t.webchat.filename=t.filename),a&&"string"==typeof a&&(t.webchat.currentLocale=a),a&&"object"==typeof a&&(a.locale&&"string"==typeof a.locale&&(t.webchat.currentLocale=a.locale),a.unavailable&&"boolean"==typeof a.unavailable&&(t.webchat.isUnavailableOnStart=a.unavailable));try{sessionStorage.setItem("__threadsWidget",JSON.stringify(t.webchat))}catch(e){window.__threadsWidget=JSON.stringify(t.webchat)}if(t.filename){const e=document.createElement("script"),n=(e.type="text/javascript",e.async=!0,e.src=t.filename,document.getElementsByTagName("script")[0]);n?n.parentNode.insertBefore(e,n):document.body.appendChild(e)}else console.error("Invalid bundle")}function o(){t("GET",e+"?rnd="+Math.random(),function(e){const t=JSON.parse(e);i(t)})}"complete"===document.readyState?o():window.addEventListener("DOMContentLoaded",o,!1)}("settings.json",{});
 
-        ThreadsWidget.onLoad(function() {
-          if (showChat) {
-            ThreadsWidget.showChat();
-          }
-        });
+          ThreadsWidget.onLoad(function() {
+            if (showChat) {
+              ThreadsWidget.showChat();
+            }
+          });
+
+          return
+        }
+
+        if (showChat) {
+          ThreadsWidget.showChat();
+        }
       }
 
       $(function() {
@@ -48,6 +56,6 @@
         });
       });
     </script>
-    <!-- {/literal} END CHAT -->
+    <!-- END CHAT -->
   </body>
 </html>
